@@ -1,70 +1,42 @@
-# ¡Bienvenido al repositorio oficial del Foro de Videojuegos! 
-Sigue esta guía rápida para configurar tu entorno local y empezar a navegar en la comunidad en cuestión de minutos.
+# Veredicto Ñoño - Foro de Videojuegos 🎮
 
-# Guía de Instalación
-Sigue estos pasos detallados para poner en marcha la plataforma en tu ordenador:
+Plataforma web interactiva que centraliza información de videojuegos y permite a los usuarios gestionar perfiles, leer noticias y publicar valoraciones. Desarrollada con un enfoque fuerte en la seguridad del lado del servidor y la integridad de la base de datos.
 
-## 1. Preparación del Entorno
-Primero, necesitas un servidor local. Descarga e instala XAMPP desde el sitio oficial:
-`🔗 apachefriends.org`
+## 🛠️ Stack Tecnológico
+* **Frontend:** HTML5, CSS y JavaScript (Validaciones con Regex, renderizado dinámico del DOM y consumo de archivos JSON para el catálogo de juegos).
+* **Backend:** PHP puro (Gestión de estado y variables de sesión).
+* **Base de Datos:** MySQL / MariaDB (Servidor XAMPP).
 
-## 2. Obtención de los Archivos
-Descarga el archivo comprimido *foro-videojuegos.zip*
+## 🚀 Características Técnicas y Seguridad
+* **Arquitectura de Base de Datos:** Modelo relacional implementando Procedimientos Almacenados (Stored Procedures) para todas las operaciones CRUD.
+* **Seguridad Backend:** Uso de consultas parametrizadas (Prepared Statements) en PHP para neutralizar ataques de Inyección SQL.
+* **Protección de Credenciales:** Implementación de algoritmos de Hashing para el almacenamiento seguro de contraseñas en la base de datos.
+* **Manejo de Sesiones:** Control de acceso en rutas protegidas para garantizar que solo los autores puedan eliminar o modificar sus reseñas y perfiles.
 
-- Descomprímelo en una ubicación de fácil acceso.
+---
 
-- Copia todos los archivos y carpetas extraídos.
+## ⚙️ Guía de Instalación Local
 
-## 3. Configuración en el Servidor
-Ahora debemos mover el proyecto a la ruta donde XAMPP pueda ejecutarlo:
+### 1. Preparación del Entorno
+* Descarga e instala XAMPP desde el sitio oficial: `apachefriends.org`.
 
-- Dirígete al directorio de instalación de XAMPP (por defecto es `C:\xampp`).
+### 2. Configuración en el Servidor
+* Descarga y descomprime el archivo del proyecto.
+* Dirígete al directorio de instalación de XAMPP (por defecto `C:\xampp\htdocs`).
+* Limpia la carpeta `htdocs` (el proyecto utiliza rutas absolutas) y pega allí los archivos extraídos.
 
-- Entra en la carpeta htdocs.
+### 3. Importar Base de Datos
+* Abre **XAMPP Control Panel** e inicia los módulos de **Apache** y **MySQL**.
+* Haz clic en *Admin* en el módulo de MySQL para abrir phpMyAdmin.
+* Crea una base de datos nombrada exactamente `forovideojuegos`.
+* Ve a la pestaña Importar, busca el archivo `forovideojuegos.sql` dentro de la carpeta `data` del proyecto y ejecútalo.
 
-- Limpia la carpeta: Mover o eliminar los archivos que se encuentren en esta, ya que el proyecto presenta rutas absolutas.
+### 🏁 Lanzamiento
+Si los pasos se ejecutaron correctamente, al ingresar a `localhost` tu navegador mostrará el sitio web conectado a la base de datos.
 
-- Pega aquí los archivos del proyecto que copiaste anteriormente.
+---
 
-## 4. Lanzamiento del Proyecto
-Busca y abre el XAMPP Control Panel.
-
-- En la sección de Actions, localiza el módulo de Apache.
-
-- Haz clic en el botón Start.
-
-- Una vez que el indicador se ponga en verde, haz clic en Admin.
-
-## 5. Importar Base de Datos
-Con la aplicación de XAMPP Control Panel abierta, haz lo siguiente:
-
-- En la sección de Actions, localica el módulo de Apache.
-
-- Haz clic en el botón Start.
-
-- Una vez que el indicador se ponga en verde, haz clic en Admin.
-
-- En mySql, crea una base de datos con el nombre `forovideojuegos`.
-
-- Selecciona la base de datos y haz clic en Importar.
-
-- Haz clic en Seleccionar Archivo.
-
-- Busca dentro de la carpeta `data` del proyecto el archivo `forovideojuegos.sql`.
-
-- Haz clic en Importar.
-
-### 🏁 ¡Todo listo!
-Si seguiste los pasos correctamente, tu navegador se abrirá automáticamente mostrando el sitio web y la base de datos.
-
-# Aplicaciones futuras
-
-- Filtrado de categorías al acceder desde la página principal del sitio y cualquier página específica de juego.
-
-- Perfil del Gestor de contenidos para una mayor facilidad al agregar videojuegos a la plataforma.
-
-- Agregar la funcionalidad de cambio de contraseña para el usuario.
-
-
-**¡Bienvenido al foro, gamer!** \
-*Que disfrutes la experiencia.*
+## 🗺️ Aplicaciones Futuras (Roadmap)
+* Implementación de filtrado de categorías dinámico desde la página principal y vistas específicas.
+* Desarrollo de un panel de administrador (Gestor de Contenidos) para facilitar la inserción de nuevos videojuegos al catálogo.
+* Módulo de recuperación y cambio de contraseña seguro para usuarios registrados.
