@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /Usuarios/
+Disallow: /Templates/signin.php
+Disallow: /Templates/signup.php
+
+Allow: /
+
+Sitemap: https://veredictonono.cl/sitemap.xml

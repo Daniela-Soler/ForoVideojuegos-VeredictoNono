@@ -1,0 +1,44 @@
+[
+    {
+        "titulo": "Devil May Cry V",
+        "imagen": "/Images/juegos/devilmaycry.jpeg",
+        "alt": "Portada del juego Devil May Cry V",
+        "url": "/Templates/juego-devilmaycry.php",
+        "categorias": ["accion", "aventura"]
+    },
+    {
+        "titulo": "Little Big Planet 2",
+        "imagen": "/Images/juegos/littlebigplanet2.jpeg",
+        "alt": "Portada del juego Little Big Planet 2",
+        "url": "/Templates/juego-littlebigplanet2.php",
+        "categorias": ["accion", "mundo abierto"]
+    },
+    {
+        "titulo": "Mass Effect Legendary Edition",
+        "imagen": "/Images/juegos/masseffect.webp",
+        "alt": "Portada del juego Mass Effect Legendary Edition",
+        "url": "/Templates/juego-masseffect.php",
+        "categorias": ["accion", "ciencia ficcion"]
+    },
+    {
+        "titulo": "Resident Evil 4 Remake",
+        "imagen": "/Images/juegos/residentevil.jpeg",
+        "alt": "Portada del juego Resident Evil 4 Remake",
+        "url": "/Templates/juego-residentevil.php",
+        "categorias": ["accion", "terror", "disparos"]
+    },
+    {
+        "titulo": "Stray",
+        "imagen": "/Images/juegos/stray.jpeg",
+        "alt": "Portada del juego Stray",
+        "url": "/Templates/juego-stray.php",
+        "categorias": ["aventura", "estrategia"]
+    },
+    {
+        "titulo": "Uncharted 3 La Traición de Drake",
+        "imagen": "/Images/juegos/uncharted3.jpg",
+        "alt": "Portada del juego Uncharted 3 La Traición de Drake",
+        "url": "/Templates/juego-uncharted3.php",
+        "categorias": ["accion", "disparos", "aventura"]
+    }
+]
